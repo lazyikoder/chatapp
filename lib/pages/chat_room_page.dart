@@ -112,6 +112,7 @@ class _ChatRoomState extends State<ChatRoom> {
         },
         child: const Icon(
           Icons.person_search,
+          color: Colors.white,
         ),
       ),
     );
