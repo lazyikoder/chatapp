@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:chatapp/globals/global_variables.dart';
 import 'package:chatapp/pages/chat_room_page.dart';
 import 'package:chatapp/pages/user_login_page.dart';
-import 'package:chatapp/services/check_connection.dart';
+// import 'package:chatapp/services/check_connection.dart';
 import 'package:chatapp/services/shared_preference_service.dart';
 import 'package:chatapp/userauthentication/user_auth.dart';
 import 'package:flutter/material.dart';
