@@ -84,7 +84,7 @@ class _ChatRoomState extends State<ChatRoom> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("AppBar"),
+        title: const Text("Chik-Chik"),
         actions: [
           IconButton(
             onPressed: () {
