@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "801497261492",
+    "project_id": "uselesschatapp-d7550",
+    "storage_bucket": "uselesschatapp-d7550.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801497261492:android:cce63023c68349a4d43ee1",
+        "android_client_info": {
+          "package_name": "com.example.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801497261492-r71v926hmdl2hmgs5ns6mrtlnansk5np.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrEGxVoVjy7heyWAIrR-sfgsO5q4Hv7bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801497261492-r71v926hmdl2hmgs5ns6mrtlnansk5np.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
