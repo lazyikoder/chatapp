@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
             SizeConfig().init(constraints, orientation);
             return MaterialApp(
               debugShowCheckedModeBanner: false,
-              title: 'Flutter Demo',
+              title: 'chatapp',
               theme: AppTheme.lightTheme,
               home: const AppSplashScreen(),
             );
