@@ -9,7 +9,7 @@ class UserModel {
     required this.userStatus,
   });
 
-  factory UserModel.fromMap(Map<String, dynamic> map) {
+  factory UserModel.fromMap(QueryDocumentSnapshot<Object?> map) {
     return UserModel(
       userName: map["name"] ?? 'No User',
       userEmailId: map["email"] ?? 'No Email',
