@@ -46,41 +46,15 @@ class _UserSearchState extends State<UserSearch> {
       });
       _query = await _dataBaseMethod.onUserSearch(search);
       if (_query.docs.isNotEmpty) {
-        for (int i = 0; i < _query.docs.length; i++) {
-          mapResult = _query.docs[i].data() as Map<String, dynamic>;
-          // result.addAll(map_result);
-          UserModel object = UserModel.fromMap(mapResult);
+         for (var element in _query.docs) {
+          UserModel object = UserModel.fromMap(element);
           _searchResult.add(object);
-
-          // map_result.forEach((key, value) { })
-          // map_result.forEach((name, email, status) => result.add(UserListModel(name, email, status)));
-          // print(map_result["name"]);
-          // _searchData.addAll(map_result);
         }
-        // _query.docs.data("id");
-        // for (var element in _query.docs) {
-        //   print("For debugg");
-        //   result = element.data as Map<String, dynamic>;
-        //   print(element.data);
-        // }
-        // _querySnapshot = _query;
         setState(() {
           isloading = false;
           isdataloaded = true;
         });
       }
-
-      // result = value.docs;
-      // print(_query);
-      //     .signUpWithEmailAndPAssword(
-      //         _username.text, _email.text, _password.text)
-      //     .then((value) => print("$value"));
-      // Navigator.pushReplacement(
-      //   context,
-      //   MaterialPageRoute(
-      //     builder: (context) => const UserHomePage(),
-      //   ),
-      // );
     }
   }
 
@@ -117,11 +91,6 @@ class _UserSearchState extends State<UserSearch> {
         // ignore: unnecessary_string_escapes
         : '$user1\_$user2';
 
-    // if (user1.substring(0, 1).codeUnitAt(0) > user2.substring(0, 1).codeUnitAt(0)) {
-    //   return '$user2\_$user1';
-    // } else {
-    //   return '$user1\_$user2';
-    // }
   }
 
   @override
@@ -237,32 +206,9 @@ class _UserSearchState extends State<UserSearch> {
                               onPressed: () {
                                 createChatRommAndStartConversation(
                                     _searchResult[index].userName);
-                                // Navigator.pushReplacement(
-                                //   context,
-                                //   MaterialPageRoute(
-                                //     builder: (context) =>
-                                //         const ConversationPage(),
-                                //   ),
-                                // );
-                                //onSearch(_searchUser.text);
                               },
                             ),
-                            // InkWell(
-                            //   onTap: () {},
-                            //   child: Container(
-                            //     padding: const EdgeInsets.all(6),
-                            //     decoration: BoxDecoration(
-                            //         color: Colors.blue,
-                            //         borderRadius: BorderRadius.circular(20)),
-                            //     child: Text(
-                            //       "Message",
-                            //       style: TextStyle(
-                            //         fontSize: SizeConfig.textMultiplier * 3,
-                            //         color: Colors.white,
-                            //       ),
-                            //     ),
-                            //   ),
-                            // ),
+                           
                           ),
                         );
                       },
